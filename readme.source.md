@@ -177,49 +177,35 @@
   <span style={{ fontSize: 10, color: 'rgba(212,175,55,0.5)', letterSpacing: 4, textTransform: 'uppercase', marginBottom: 24, zIndex: 10 }}>services</span>
   <div style={{ display: 'flex', gap: 16, zIndex: 10 }}>
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, padding: '18px 28px', background: 'rgba(255,255,255,0.025)', border: '1px solid rgba(212,175,55,0.12)', borderRadius: 14, minWidth: 170 }}>
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="10" stroke="rgba(212,175,55,0.85)" strokeWidth="1.5"/>
-        <circle cx="12" cy="12" r="6" stroke="rgba(212,175,55,0.85)" strokeWidth="1.5"/>
-        <circle cx="12" cy="12" r="2" fill="rgba(212,175,55,0.85)"/>
-        <line x1="12" y1="2" x2="12" y2="5" stroke="rgba(212,175,55,0.85)" strokeWidth="1.5" strokeLinecap="round"/>
-        <line x1="12" y1="19" x2="12" y2="22" stroke="rgba(212,175,55,0.85)" strokeWidth="1.5" strokeLinecap="round"/>
-        <line x1="2" y1="12" x2="5" y2="12" stroke="rgba(212,175,55,0.85)" strokeWidth="1.5" strokeLinecap="round"/>
-        <line x1="19" y1="12" x2="22" y2="12" stroke="rgba(212,175,55,0.85)" strokeWidth="1.5" strokeLinecap="round"/>
-      </svg>
+      <div style={{ display: 'flex', width: 28, height: 28, borderRadius: '50%', border: '2px solid rgba(212,175,55,0.85)', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', width: 14, height: 14, borderRadius: '50%', border: '1.5px solid rgba(212,175,55,0.85)', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{ display: 'flex', width: 4, height: 4, borderRadius: '50%', background: 'rgba(212,175,55,0.85)' }} />
+        </div>
+      </div>
       <span style={{ fontSize: 13, fontWeight: 700, color: 'rgba(212,175,55,0.85)', textAlign: 'center' }}>Cheat</span>
       <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.35)', textAlign: 'center', letterSpacing: 0.5 }}>Game cheats &amp; exploits</span>
     </div>
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, padding: '18px 28px', background: 'rgba(255,255,255,0.025)', border: '1px solid rgba(212,175,55,0.12)', borderRadius: 14, minWidth: 170 }}>
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-        <rect x="2" y="4" width="20" height="13" rx="2" stroke="rgba(108,195,255,0.85)" strokeWidth="1.5"/>
-        <line x1="8" y1="21" x2="16" y2="21" stroke="rgba(108,195,255,0.85)" strokeWidth="1.5" strokeLinecap="round"/>
-        <line x1="12" y1="17" x2="12" y2="21" stroke="rgba(108,195,255,0.85)" strokeWidth="1.5" strokeLinecap="round"/>
-        <circle cx="17" cy="9" r="1.5" fill="rgba(108,195,255,0.85)"/>
-        <line x1="6" y1="9" x2="11" y2="9" stroke="rgba(108,195,255,0.85)" strokeWidth="1.2" strokeLinecap="round"/>
-        <line x1="6" y1="12" x2="11" y2="12" stroke="rgba(108,195,255,0.85)" strokeWidth="1.2" strokeLinecap="round"/>
-      </svg>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 3, alignItems: 'flex-start' }}>
+        <div style={{ display: 'flex', width: 28, height: 18, borderRadius: 3, border: '1.5px solid rgba(108,195,255,0.85)' }} />
+        <div style={{ display: 'flex', alignSelf: 'center', width: 10, height: 6, borderRadius: '0 0 2px 2px', border: '1.5px solid rgba(108,195,255,0.85)', borderTop: 'none' }} />
+      </div>
       <span style={{ fontSize: 13, fontWeight: 700, color: 'rgba(108,195,255,0.85)', textAlign: 'center' }}>Remote Access Tools</span>
       <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.35)', textAlign: 'center', letterSpacing: 0.5 }}>Private · Internal use only</span>
     </div>
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, padding: '18px 28px', background: 'rgba(255,255,255,0.025)', border: '1px solid rgba(212,175,55,0.12)', borderRadius: 14, minWidth: 170 }}>
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="10" stroke="rgba(163,230,53,0.85)" strokeWidth="1.5"/>
-        <ellipse cx="12" cy="12" rx="4" ry="10" stroke="rgba(163,230,53,0.85)" strokeWidth="1.2"/>
-        <line x1="2" y1="12" x2="22" y2="12" stroke="rgba(163,230,53,0.85)" strokeWidth="1.2"/>
-        <line x1="4" y1="7" x2="20" y2="7" stroke="rgba(163,230,53,0.85)" strokeWidth="1"/>
-        <line x1="4" y1="17" x2="20" y2="17" stroke="rgba(163,230,53,0.85)" strokeWidth="1"/>
-      </svg>
+      <div style={{ display: 'flex', width: 28, height: 28, borderRadius: '50%', border: '1.5px solid rgba(163,230,53,0.85)', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', width: 1, height: 20, background: 'rgba(163,230,53,0.85)' }} />
+        <div style={{ display: 'flex', position: 'absolute', width: 20, height: 1, background: 'rgba(163,230,53,0.85)' }} />
+      </div>
       <span style={{ fontSize: 13, fontWeight: 700, color: 'rgba(163,230,53,0.85)', textAlign: 'center' }}>Website</span>
       <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.35)', textAlign: 'center', letterSpacing: 0.5 }}>Web development &amp; hosting</span>
     </div>
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, padding: '18px 28px', background: 'rgba(255,255,255,0.025)', border: '1px solid rgba(212,175,55,0.12)', borderRadius: 14, minWidth: 170 }}>
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-        <rect x="2" y="6" width="20" height="14" rx="2" stroke="rgba(195,155,255,0.85)" strokeWidth="1.5"/>
-        <circle cx="12" cy="13" r="3" stroke="rgba(195,155,255,0.85)" strokeWidth="1.3"/>
-        <line x1="5" y1="10" x2="7" y2="10" stroke="rgba(195,155,255,0.85)" strokeWidth="1.5" strokeLinecap="round"/>
-        <line x1="17" y1="10" x2="19" y2="10" stroke="rgba(195,155,255,0.85)" strokeWidth="1.5" strokeLinecap="round"/>
-        <rect x="9" y="3" width="6" height="3" rx="1" stroke="rgba(195,155,255,0.85)" strokeWidth="1.2"/>
-      </svg>
+      <div style={{ display: 'flex', width: 28, height: 20, borderRadius: 4, border: '1.5px solid rgba(195,155,255,0.85)', alignItems: 'center', justifyContent: 'center', gap: 5 }}>
+        <div style={{ display: 'flex', width: 6, height: 6, borderRadius: '50%', border: '1.5px solid rgba(195,155,255,0.85)' }} />
+        <div style={{ display: 'flex', width: 4, height: 4, borderRadius: '50%', background: 'rgba(195,155,255,0.85)' }} />
+      </div>
       <span style={{ fontSize: 13, fontWeight: 700, color: 'rgba(195,155,255,0.85)', textAlign: 'center' }}>Game</span>
       <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.35)', textAlign: 'center', letterSpacing: 0.5 }}>Game development</span>
     </div>
@@ -267,11 +253,7 @@
       <div style={{ display: 'flex', flexDirection: 'column', gap: 14, marginTop: 18 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
           <div style={{ width: 36, height: 36, borderRadius: '50%', background: 'rgba(212,175,55,0.12)', border: '1px solid rgba(212,175,55,0.4)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-              <path d="M3 18h18M3 18l3-9 6 5 4-8 4 12" stroke="rgba(212,175,55,0.9)" strokeWidth="1.8" strokeLinejoin="round" strokeLinecap="round"/>
-              <circle cx="3" cy="9" r="1.5" fill="rgba(212,175,55,0.9)"/>
-              <circle cx="21" cy="6" r="1.5" fill="rgba(212,175,55,0.9)"/>
-            </svg>
+            <span style={{ fontSize: 13, fontWeight: 800, color: 'rgba(212,175,55,0.9)' }}>M</span>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
             <span style={{ fontSize: 15, fontWeight: 700, color: '#ffffff' }}>MidasR (Nagi)</span>
@@ -282,16 +264,9 @@
         <div style={{ display: 'flex', height: 1, background: 'rgba(212,175,55,0.08)' }} />
         <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
           <div style={{ width: 36, height: 36, borderRadius: '50%', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-              <line x1="3" y1="20" x2="21" y2="20" stroke="rgba(255,255,255,0.3)" strokeWidth="1.5" strokeLinecap="round"/>
-              <line x1="3" y1="9" x2="21" y2="9" stroke="rgba(255,255,255,0.3)" strokeWidth="1.5" strokeLinecap="round"/>
-              <line x1="12" y1="4" x2="3" y2="9" stroke="rgba(255,255,255,0.3)" strokeWidth="1.5" strokeLinecap="round"/>
-              <line x1="12" y1="4" x2="21" y2="9" stroke="rgba(255,255,255,0.3)" strokeWidth="1.5" strokeLinecap="round"/>
-              <line x1="6" y1="9" x2="6" y2="20" stroke="rgba(255,255,255,0.3)" strokeWidth="1.3" strokeLinecap="round"/>
-              <line x1="12" y1="9" x2="12" y2="20" stroke="rgba(255,255,255,0.3)" strokeWidth="1.3" strokeLinecap="round"/>
-              <line x1="18" y1="9" x2="18" y2="20" stroke="rgba(255,255,255,0.3)" strokeWidth="1.3" strokeLinecap="round"/>
-            </svg>
+            <span style={{ fontSize: 13, fontWeight: 800, color: 'rgba(255,255,255,0.3)' }}>T</span>
           </div>
+
           <div style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
             <span style={{ fontSize: 15, fontWeight: 600, color: 'rgba(255,255,255,0.6)' }}>Totowi</span>
             <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)', letterSpacing: 1 }}>Former Owner</span>
