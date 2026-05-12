@@ -227,25 +227,25 @@
       <circle id="tr1" cx="230" cy="145" r="55"  fill="none" stroke="rgba(212,175,55,0.9)" strokeWidth="0.55" />
       <circle id="tr2" cx="230" cy="145" r="92"  fill="none" stroke="rgba(212,175,55,0.9)" strokeWidth="0.45" />
     </svg>
-    <div style={{ position: 'relative', zIndex: 10 }}>
+    <div style={{ position: 'relative', display: 'flex', flexDirection: 'column' }}>
       <span style={{ fontSize: 10, color: 'rgba(212,175,55,0.5)', letterSpacing: 4, textTransform: 'uppercase' }}>ownership history</span>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 14, marginTop: 18 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
           <div style={{ width: 36, height: 36, borderRadius: '50%', background: 'rgba(212,175,55,0.12)', border: '1px solid rgba(212,175,55,0.4)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 14, flexShrink: 0 }}>👑</div>
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
             <span style={{ fontSize: 15, fontWeight: 700, color: '#ffffff' }}>MidasR (Nagi)</span>
             <span style={{ fontSize: 11, color: 'rgba(212,175,55,0.75)', letterSpacing: 1 }}>Current Owner · github.com/MidasRX</span>
           </div>
-          <span style={{ marginLeft: 'auto', padding: '3px 10px', background: 'rgba(212,175,55,0.1)', color: 'rgba(212,175,55,0.9)', borderRadius: 100, fontSize: 10, border: '1px solid rgba(212,175,55,0.25)', letterSpacing: 1 }}>ACTIVE</span>
+          <span style={{ padding: '3px 10px', background: 'rgba(212,175,55,0.1)', color: 'rgba(212,175,55,0.9)', borderRadius: 100, fontSize: 10, border: '1px solid rgba(212,175,55,0.25)', letterSpacing: 1 }}>ACTIVE</span>
         </div>
-        <div style={{ height: '1px', background: 'rgba(212,175,55,0.08)' }} />
+        <div style={{ display: 'flex', height: 1, background: 'rgba(212,175,55,0.08)' }} />
         <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
           <div style={{ width: 36, height: 36, borderRadius: '50%', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 14, flexShrink: 0 }}>🏛</div>
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
             <span style={{ fontSize: 15, fontWeight: 600, color: 'rgba(255,255,255,0.6)' }}>Totowi</span>
             <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)', letterSpacing: 1 }}>Former Owner</span>
           </div>
-          <span style={{ marginLeft: 'auto', padding: '3px 10px', background: 'rgba(255,255,255,0.04)', color: 'rgba(255,255,255,0.3)', borderRadius: 100, fontSize: 10, border: '1px solid rgba(255,255,255,0.08)', letterSpacing: 1 }}>FORMER</span>
+          <span style={{ padding: '3px 10px', background: 'rgba(255,255,255,0.04)', color: 'rgba(255,255,255,0.3)', borderRadius: 100, fontSize: 10, border: '1px solid rgba(255,255,255,0.08)', letterSpacing: 1 }}>FORMER</span>
         </div>
       </div>
     </div>
@@ -269,14 +269,12 @@
         { name: 'Midnight', role: 'C/C++ Developer', status: 'retired', color: 'rgba(255,255,255,0.3)' },
       ].map((dev, i) => (
         <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <div style={{ width: 8, height: 8, borderRadius: '50%', background: dev.status === 'active' ? '#22c55e' : '#6b7280', flexShrink: 0 }} />
+          <div style={{ display: 'flex', width: 8, height: 8, borderRadius: '50%', background: dev.status === 'active' ? '#22c55e' : '#6b7280', flexShrink: 0 }} />
           <div style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
             <span style={{ fontSize: 13, fontWeight: 600, color: dev.color }}>{dev.name}</span>
             <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.38)', marginTop: 1 }}>{dev.role}</span>
           </div>
-          {dev.status === 'retired' && (
-            <span style={{ padding: '2px 8px', background: 'rgba(107,114,128,0.15)', color: 'rgba(255,255,255,0.3)', borderRadius: 100, fontSize: 9, border: '1px solid rgba(107,114,128,0.2)', letterSpacing: 1, textTransform: 'uppercase' }}>Fired / Retired</span>
-          )}
+          <span style={{ padding: '2px 8px', background: dev.status === 'retired' ? 'rgba(107,114,128,0.15)' : 'transparent', color: dev.status === 'retired' ? 'rgba(255,255,255,0.3)' : 'transparent', borderRadius: 100, fontSize: 9, border: dev.status === 'retired' ? '1px solid rgba(107,114,128,0.2)' : '1px solid transparent', letterSpacing: 1, textTransform: 'uppercase' }}>{dev.status === 'retired' ? 'Fired / Retired' : ''}</span>
         </div>
       ))}
     </div>
