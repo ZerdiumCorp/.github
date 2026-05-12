@@ -268,7 +268,7 @@
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
-            <span style={{ fontSize: 15, fontWeight: 600, color: 'rgba(255,255,255,0.6)' }}>Totowi</span>
+            <span style={{ fontSize: 15, fontWeight: 600, color: 'rgba(255,255,255,0.6)' }}>Totowi / Nanoutedamour</span>
             <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)', letterSpacing: 1 }}>Former Owner</span>
           </div>
           <span style={{ padding: '3px 10px', background: 'rgba(255,255,255,0.04)', color: 'rgba(255,255,255,0.3)', borderRadius: 100, fontSize: 10, border: '1px solid rgba(255,255,255,0.08)', letterSpacing: 1 }}>FORMER</span>
